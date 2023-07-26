@@ -88,4 +88,4 @@ class Config(object):
 
 
 if __name__ == "__main__":
-    ...
+    Config('/mnt/e/Code/CeleryMath/celeryMath/conf/conf.json')

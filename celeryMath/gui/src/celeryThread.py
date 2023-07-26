@@ -19,7 +19,7 @@ class CeleryInferThread(QThread):
 
     def run(self):
         try:
-            prediction = self.model(self.img)
+            prediction = self.model(self.x)
             self.finished.emit({"status": True, "data": prediction})
         except Exception as e:
             import traceback
